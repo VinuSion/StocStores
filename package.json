@@ -33,14 +33,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VinuSion/StocStores.git"
+    "url": "git+https://github.com/VinuSion/stocstores.git"
   },
   "author": "StocStores",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VinuSion/StocStores/issues"
+    "url": "https://github.com/VinuSion/stocstores/issues"
   },
-  "homepage": "https://github.com/VinuSion/StocStores#readme",
+  "homepage": "https://github.com/VinuSion/stocstores#readme",
   "engines": {
     "node": "12.4.0",
     "npm": "6.9.0"
