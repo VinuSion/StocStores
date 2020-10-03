@@ -4,15 +4,15 @@
 
 ### Instalar "Visual Studio Code" (Opcional)
 
-Descargalo aqui:
+Descargalo aqui: https://code.visualstudio.com/Download
 
 ### Instalar "Node.js" (Obligatorio)
 
-Descargalo aqui:
+Descargalo aqui: https://nodejs.org/es/download/
 
 ### Instalar "MongoDB" (Obligatorio)
 
-Descargalo aqui: 
+Descargalo aqui: https://www.mongodb.com/try/download/community
 
 ----------------------------------------------------------------------------
 
