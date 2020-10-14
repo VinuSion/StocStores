@@ -117,11 +117,16 @@ function OrderScreen(props) {
               }
             </li>
             <li>
-              {order.isPaid && !order.isDelivered ?
+              {order.isPaid && !order.isDelivered &&
                 <button
                 className="button full-width"
                 onClick={handleSuccessDelivery}>Realizar Envio</button>
-              : <div className="big-text">Esta Solicitud ya Finalizo</div>}
+              }
+            </li>
+            <li>
+              {order.isPaid && order.isDelivered &&
+                <div className="big-text">Esta Solicitud ya Finalizo</div>
+              }
             </li>
             <li>
               <h3>Resumen de Solicitud</h3>
