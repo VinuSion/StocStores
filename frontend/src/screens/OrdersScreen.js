@@ -40,7 +40,7 @@ function OrdersScreen(props) {
               <th>Pagado</th>
               <th>Pagado En</th>
               <th>Enviado</th>
-              <th>Enviado A</th>
+              <th>Enviado En</th>
               <th>Acciones</th>
             </tr>
           </thead>
