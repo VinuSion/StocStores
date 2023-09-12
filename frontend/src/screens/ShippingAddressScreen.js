@@ -25,7 +25,7 @@ export default function ShippingAddressScreen() {
       navigate('/signin?redirect=/shipping');
     }
   }, [userInfo, navigate]);
-  const [deparment, setDepartment] = useState(shippingAddress.department || '');
+  const [department, setDepartment] = useState(shippingAddress.department || '');
   const submitHandler = (e) => {
     e.preventDefault();
     ctxDispatch({
@@ -35,7 +35,7 @@ export default function ShippingAddressScreen() {
         address,
         city,
         postalCode,
-        deparment,
+        department,
         location: shippingAddress.location,
       },
     });
@@ -102,7 +102,7 @@ export default function ShippingAddressScreen() {
           <Form.Group className="mb-3" controlId="department">
             <Form.Label>Departamento</Form.Label>
             <Form.Control
-              value={deparment}
+              value={department}
               onChange={(e) => setDepartment(e.target.value)}
               required
             />
