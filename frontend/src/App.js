@@ -87,13 +87,13 @@ function App() {
               </Button>
 
               <LinkContainer to="/">
-                <Navbar.Brand>StockStores</Navbar.Brand>
+                <Navbar.Brand className="text-light">StockStores</Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
-                  <Link to="/cart" className="nav-link">
+                  <Link to="/cart" className="nav-link text-light">
                     Carrito
                     {cart.cartItems.length > 0 && (
                       <Badge pill bg="danger">
@@ -119,7 +119,7 @@ function App() {
                       </Link>
                     </NavDropdown>
                   ) : (
-                    <Link className="nav-link" to="/signin">
+                    <Link className="nav-link text-light" to="/signin">
                       Sign In
                     </Link>
                   )}
@@ -158,6 +158,7 @@ function App() {
             {categories.map((category) => (
               <Nav.Item key={category}>
                 <LinkContainer
+                  className="white"
                   to={{ pathname: '/search', search: `category=${category}` }}
                   onClick={() => setSidebarIsOpen(false)}
                 >

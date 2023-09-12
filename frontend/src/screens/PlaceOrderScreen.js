@@ -44,7 +44,8 @@ export default function PlaceOrderScreen() {
       cart.cartItems.reduce((a, c) => a + c.quantity * c.price, 0)
     );
   */
-  cart.shippingPrice = cart.itemsPrice > 10000 ? round2(0) : round2(500);
+  cart.shippingPrice = 0;
+  //cart.shippingPrice = cart.itemsPrice > 10000 ? round2(0) : round2(500);
   cart.ivaPrice = 0;
   // cart.ivaPrice = round2(0.19 * cart.itemsPrice);
   cart.totalPrice = cart.itemsPrice + cart.shippingPrice + cart.ivaPrice;

@@ -27,6 +27,19 @@ main {
   justify-content: center;
 }
 
+.white{
+  color: white;
+}
+
+.white:hover {
+  color: white;
+}
+
+#basic-nav-dropdown, #vendedor-nav-dropdown {
+  color: white;
+  font-weight: bold;
+}
+
 .rating span {
   color: #262931;
 }
