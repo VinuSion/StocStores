@@ -72,7 +72,7 @@ export default function SigninScreen() {
           <Link to={`/signup?redirect=${redirect}`}>Crea tu Cuenta</Link>
         </div>
         <div className="mb-3">
-          Olvido su Contraseña? <Link to={`/forgot-password`}>Cambiar Contraseña</Link>
+          Olvidaste tu Contraseña? <Link to={`/forgot-password`}>Cambiar Contraseña</Link>
         </div>
       </Form>
     </Container>

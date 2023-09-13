@@ -29,6 +29,7 @@ export default function ForgotPasswordScreen() {
       const { data } = await Axios.post('/api/users/forgot-password', {
         email,
       });
+      console.log(data);
       toast.success(data.message);
     } catch (err) {
       toast.error(getError(err));

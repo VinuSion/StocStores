@@ -145,8 +145,9 @@ function ProductScreen() {
                 numReviews={product.numReviews}
               ></Rating>
             </ListGroup.Item>
-            <ListGroup.Item>Precio: ${product.price}</ListGroup.Item>
+            <ListGroup.Item><b>Precio: </b> ${product.price}</ListGroup.Item>
             <ListGroup.Item>
+            <b>Imagenes:</b>
               <Row xs={1} md={2} className="g-2">
                 {[product.image, ...product.images].map((x) => (
                   <Col key={x}>
@@ -165,7 +166,7 @@ function ProductScreen() {
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
-              Descripcion:
+              <b>Descripcion:</b>
               <p>{product.description}</p>
             </ListGroup.Item>
           </ListGroup>
@@ -197,7 +198,7 @@ function ProductScreen() {
                   <ListGroup.Item>
                     <div className="d-grid">
                       <Button onClick={addToCartHandler} variant="primary">
-                        Agregar
+                        Agregar al Carrito
                       </Button>
                     </div>
                   </ListGroup.Item>
