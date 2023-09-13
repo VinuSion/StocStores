@@ -26,7 +26,7 @@ import axios from 'axios';
 import SearchBox from './components/SearchBox';
 import SearchScreen from './screens/SearchScreen';
 import ProtectedRoute from './components/ProtectedRoute';
-import DashboardScreen from './screens/DashboardScreen';
+// import DashboardScreen from './screens/DashboardScreen';
 import VendedorRoute from './components/VendedorRoute';
 import ProductListScreen from './screens/ProductListScreen';
 import ProductEditScreen from './screens/ProductEditScreen';
@@ -125,9 +125,11 @@ function App() {
                   )}
                   {userInfo && userInfo.isVendedor && (
                     <NavDropdown title="Vendedor" id="vendedor-nav-dropdown">
+                      {/*
                       <LinkContainer to="/vendedor/dashboard">
                         <NavDropdown.Item>Dashboard</NavDropdown.Item>
                       </LinkContainer>
+                      */}
                       <LinkContainer to="/vendedor/products">
                         <NavDropdown.Item>Productos</NavDropdown.Item>
                       </LinkContainer>
@@ -225,6 +227,7 @@ function App() {
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
               
               {/* Vendedor Routes */}
+              {/*
               <Route
                 path="/vendedor/dashboard"
                 element={
@@ -233,6 +236,7 @@ function App() {
                   </VendedorRoute>
                 }
               ></Route>
+              */}
               <Route
                 path="/vendedor/orders"
                 element={
