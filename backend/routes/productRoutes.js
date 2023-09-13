@@ -16,16 +16,16 @@ productRouter.post(
   isVendedor,
   expressAsyncHandler(async (req, res) => {
     const newProduct = new Product({
-      name: req.body.name,
-      slug: req.body.slug,
-      image: req.body.image,
-      price: req.body.price,
-      category: req.body.category,
-      brand: req.body.brand,
-      countInStock: req.body.countInStock,
-      rating: req.body.rating,
-      numReviews: req.body.numReviews,
-      description: req.body.description,
+      name: 'Nombre Producto ' + Date.now(),
+      slug: 'nombre-producto-' + Date.now(),
+      image: '/images/pro1.webp',
+      price: 0,
+      category: 'nombre categoria',
+      brand: 'nombre marca',
+      countInStock: 0,
+      rating: 0,
+      numReviews: 0,
+      description: 'descripcion',
     });
     const product = await newProduct.save();
     res.status(201).send({ message: 'Producto Creado', product });

@@ -26,7 +26,7 @@ const data = {
       brand: 'Colanta',
       rating: 4.5,
       numReviews: 10,
-      description: 'Queso crema para untar.',
+      description: 'Perfecto para untar en panes, galletas, tostadas y más. Prueba su delicioso sabor y agradable textura.',
     },
     {
       name: 'Leche Entera Alqueria x 1100ml Megalitro',
@@ -38,7 +38,7 @@ const data = {
       brand: 'Alqueria',
       rating: 4.7,
       numReviews: 24,
-      description: 'leche entera liquida deslactosada.',
+      description: 'La leche entera Alquería deslactosada es buena fuente de proteína, calcio y super cremosa.',
     },
     {
       name: 'Bebida gaseosa Coca Cola original x 1.5l',
@@ -50,7 +50,19 @@ const data = {
       brand: 'Coca Cola',
       rating: 4.0,
       numReviews: 14,
-      description: 'bebida refrescante coca cola litro y medio.',
+      description: 'Disfruta de la bebida refrescante Coca Cola litro y medio.',
+    },
+    {
+      name: 'Harina PAN maíz blanco x1000g',
+      slug: 'harina-maiz-pan',
+      category: 'Viveres',
+      image: '/images/pro4.webp',
+      price: 3400,
+      countInStock: 10,
+      brand: 'P.A.N.',
+      rating: 4.5,
+      numReviews: 3,
+      description: 'Harina P.A.N. es un producto único hecho a base de puro maíz, que permite la preparación de deliciosos y variados platos propios de cada cultura, disfrútala en todas sus presentaciones, Blanca, Amarilla y Dulce.',
     },
   ],
 };
