@@ -1,6 +1,7 @@
 # StockStores
 
 ### Live Demo: https://stockstores.onrender.com/
+<br>
 
 ![stockstores](/frontend/public/images/stockstores.png)
 
